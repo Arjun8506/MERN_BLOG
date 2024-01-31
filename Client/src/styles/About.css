@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+    padding: 15vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+}
+.about h1{
+    color: rgb(0, 187, 0);
+    text-transform: uppercase;
+    margin-bottom: 8vh;
+    text-decoration: underline dashed;
+}
+.about p{
+    font-size: 1.5vw;
+    width: 80%;
+    color: rgba(43, 43, 43, 0.836)
+}

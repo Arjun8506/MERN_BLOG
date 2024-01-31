@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: gilroy;
+}
+::selection{
+  background: rgb(2,244,3);
+  color: black;
+}
+
+/* HEADER STYLING */
+
+.header {
+  width: 100%;
+  min-height: 12vh;
+  border-bottom: 8px solid rgb(0, 187, 0);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vh 2.5vw;
+}
+
+#logo {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  font-size: 2.5vw;
+}
+
+#logo span {
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  padding: 1vh 1vw;
+  border-radius: 10px;
+}
+
+.link {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchInput input {
+  padding: 1vh 1vw;
+  background-color: rgba(175, 175, 175, 0.164);
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-family: gilroy;
+  font-size: 1.5vw;
+}
+
+#searchIcon {
+  position: absolute;
+  right: 4%;
+}
+
+.header .restPart {
+  display: flex;
+  gap: 6vw;
+  align-items: center;
+}
+
+.restPart .menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: 1.6vw;
+}
+
+.signin {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.signin button {
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(175, 175, 175, 0.164);
+  border: 2px solid grey;
+}
+
+#signin {
+  border: 2px solid;
+  padding: 1vh 1vw;
+  border-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%) 1;
+  transition: all ease-in-out 0.4s;
+}
+
+#signin:hover {
+  border-radius: 10px;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+.phonemenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  display: none;
+}
+
+/* FOOTER STYLING */
+
+.footer{
+  padding: 5vh 2.5vw;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid rgb(0, 187, 0);
+  border-radius: 20px;
+  border-top: 10px solid rgb(0, 187, 0);
+}
+.footer .upperpart{
+  display: flex;
+  align-items: flex-start;
+  gap: 4vw;
+}
+.socialmediaLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.upperpart .sociallinks{
+  font-size: 2.5vw;
+  color: black;
+}
+.sociallinks:hover{
+  color: #00ca5f;
+}
+.des{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.lowerpart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
