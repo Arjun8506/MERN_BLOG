@@ -1,4 +1,5 @@
 const dotenv = require("dotenv");
+const userModel = require("./user.model.js")
 const express = require("express")
 const router = express();
 
@@ -19,6 +20,15 @@ router.get("/", function(req, res){
 
 router.get("/about", function(req, res){
     res.send("hello from about")
+})
+
+router.get("/create", function(req, res){
+    const alluser = userModel.create({
+        username: "max",
+        email: "text@mail.com",
+        password: "arjun"
+    })
+    res.send(alluser)
 })
 
 router.listen(3000, () =>{
