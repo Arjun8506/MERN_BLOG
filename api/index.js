@@ -1,6 +1,17 @@
+const dotenv = require("dotenv");
 const express = require("express")
-
 const router = express();
+
+dotenv.config()
+
+const mongoose = require("mongoose")
+mongoose.connect(process.env.MONGODB)
+.then(() =>{
+    console.log("MongoDB is Connected");
+})
+.catch((err)=>{
+    console.log(err);
+})
 
 router.get("/", function(req, res){
     res.send("hello, I am backend")
