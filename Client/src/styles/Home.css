@@ -1,0 +1,36 @@
+.home{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20vh 2.5vw;
+}
+.home h1{
+    font-size: 4.5vw;
+    color: rgb(0, 187, 0);
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+}
+.home p{
+    margin-bottom: 2vh;
+}
+.home p span{
+    text-transform: uppercase;
+    color: rgb(0, 187, 0);
+    font-weight: 900;
+}
+#blogslink{
+    position: relative;
+}
+.link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(0, 187, 0); /* Set your desired underline color */
+    transition: width 0.3s ease; /* Set the transition for smooth animation */
+  }
+
+.link:hover::before{
+    width: 100%;
+}

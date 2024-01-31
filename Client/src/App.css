@@ -46,6 +46,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   color: black;
+  position: relative;
 }
 
 .searchInput {
