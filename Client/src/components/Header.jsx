@@ -4,26 +4,22 @@ import { IoMenu } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import { IoMdMoon } from "react-icons/io";
 import Logo from "./lOGO.JSX";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme, selectBgColor } from "../reducer/bgColorSlice.js";
 
 const Header = () => {
-  const [bgColor, setbgColor] = useState("white");
-  const [color, setcolor] = useState("black")
+  const dispatch = useDispatch();
+  const bgColor = useSelector(selectBgColor);
 
-  const changecolor = () => {
-    if (bgColor === "white") {
-      setbgColor("black");
-      setcolor("white")
-      console.log(bgColor);
-      console.log(color);
-    } else {
-      setbgColor("white")
-      setcolor("black")
-      console.log(bgColor);
-    }
+  const handleButtonClick = () => {
+    dispatch(toggleTheme());
   };
 
+
   return (
-    <div className="header" style={{backgroundColor: bgColor, color: color}}>
+    <div className="header" 
+    style={{ backgroundColor: bgColor === 'light' ? 'white' : 'rgb(1,27,60)', color: bgColor === 'light' ? 'black' : 'white' }}
+    >
       <Logo />
       <div className="searchInput">
         <input type="text" name="search" placeholder="Search..." />
@@ -50,7 +46,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="signin">
-          <button id="bgChangerBTN" onClick={() =>{changecolor()}}
+          <button id="bgChangerBTN" onClick={handleButtonClick}
           >
             <IoMdMoon />
           </button>
