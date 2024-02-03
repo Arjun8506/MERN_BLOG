@@ -90,11 +90,21 @@ body {
 }
 
 .signin button {
+  
+}
+#bgChangerBTN{
   padding: 1vh 1vw;
   border-radius: 10px;
   text-align: center;
-  background-color: rgba(175, 175, 175, 0.164);
-  border: 2px solid grey;
+  border: none;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  transition: all ease-in-out 0.4s;
+}
+#bgChangerBTN:hover{
+  cursor: pointer;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #FFFB7D 0%, #85FFBD 100%);
 }
 
 #signin {
@@ -102,6 +112,9 @@ body {
   padding: 1vh 1vw;
   border-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%) 1;
   transition: all ease-in-out 0.4s;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
 }
 
 #signin:hover {
@@ -109,6 +122,7 @@ body {
   background-color: #85FFBD;
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
+
 .phonemenu{
   display: flex;
   align-items: center;

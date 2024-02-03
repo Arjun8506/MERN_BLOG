@@ -1,0 +1,75 @@
+.signUp{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10vh 10vw;
+}
+#signupmainDiv{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.sighupImage{
+    width: 50%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+}
+p{
+    color: rgb(66, 66, 66);
+    margin-top: 4vh;
+}
+.sighupImage img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.signupfieldsDiv{
+    width: 50%;
+}
+.inputField{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    margin-bottom: 4vh;
+}
+.inputField input, #signUp_Btn{
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 10px;
+    font-family: gilroy;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.308);
+}
+#signUp_Btn{
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+transition: all ease-in-out 0.2s;
+}
+#signUp_Btn:hover{
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #FFFB7D 0%, #85FFBD 100%);
+cursor: pointer;
+}
+.signinlink{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+#signinlinkfromsignup{
+    margin-top: 4vh;
+    color: rgb(0, 187, 0);
+}
+
+.signupfieldsDiv .error{
+    width: 80%;
+    background: rgba(255, 0, 0, 0.301);
+    font-family: gilroy;
+    font-size: 1.3vw;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 4vh;
+    color: red;
+}

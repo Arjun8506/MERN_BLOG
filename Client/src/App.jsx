@@ -9,11 +9,13 @@ import SignUp from './pages/SignUp'
 import Dashboard from './pages/Dashboard'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Profile from './pages/Profile'
 
 
 
 const App = () => {
   return (
+    // <div style={{backgroundColor: bgColor}}>
     <BrowserRouter>
     <Header />
     <Routes>
@@ -23,9 +25,11 @@ const App = () => {
       <Route path='/sign-in' element={<SignIn />} />
       <Route path='/sign-up' element={<SignUp />} />
       <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/profile' element={<Profile />} />
     </Routes>
     <Footer />
     </BrowserRouter>
+    // </div>
   )
 }
 

@@ -30,3 +30,7 @@ html, body {
     width: 80%;
     color: rgba(43, 43, 43, 0.836)
 }
+.about p::first-letter{
+    font-size: 200%; 
+    color: rgb(0, 187, 0);
+}
